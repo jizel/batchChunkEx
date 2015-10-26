@@ -1,0 +1,5 @@
+<batch-artifacts xmlns = "http://xmlns.jcp.org/xml/ns/javaee:>
+    <ref id = "myItemReader" class="muni.fi.dp.jz.batchhelloworld2.StringReader" />
+    <ref id = "myItemWriter" class="muni.fi.dp.jz.batchhelloworld2.StringWriter" />
+    <ref id = "myItemProcessor" class="muni.fi.dp.jz.batchhelloworld2.StringProcessor" />
+</batch-artifacts>

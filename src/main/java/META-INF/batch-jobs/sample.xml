@@ -1,0 +1,19 @@
+<job id="SampleBatch2" restartable = "true" xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0">
+    <step id ="step1">
+        <chunk checkpoint-policy="item" item-count="10000">
+            <reader ref = "myChunkReader">
+                <properties>
+                    <property name ="filename" value="c:\Users\Zorz\Documents\NetBeansProjects\batchHelloWorld2\lorem"/>
+                </properties>
+            </reader>
+            <processor ref = "myChunkProcessor"/>
+            <writer ref = "myChunkWriter">
+                <properties>
+                    <property name ="filename" value="c:\Users\Zorz\Documents\NetBeansProjects\batchHelloWorld2\output.txt"/>
+                </properties>
+            </writer>
+
+        </chunk>
+    </step>
+</job>
+    
